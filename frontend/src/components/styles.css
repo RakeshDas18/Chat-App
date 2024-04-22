@@ -1,0 +1,34 @@
+.menu-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #3B82F6; /* Adjust as needed */
+    color: #3B82F6;
+    z-index: 9999; /* Ensure it's on top of other content */
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+  }
+  
+  .menu-content {
+    display: none;
+  }
+  
+  .menu-content.open {
+    display: block;
+  }
+  
+  .msgUser{
+    position: fixed;
+  }
+
+  .toggleBtn {
+    display: block;
+  }
+.green-dot {
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    color: green;
+    border-radius: 50%;
+  }
+  
