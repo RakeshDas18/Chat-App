@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import SendInput from './SendInput';
 import Messages from './Messages';
 import { useSelector, useDispatch } from "react-redux";
-import OtherUsers from './OtherUsers';
+import OtherUsers from "./OtherUsers"
 import './styles.css'
 
 const MessageContainer = () => {
