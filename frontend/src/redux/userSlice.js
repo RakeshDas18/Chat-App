@@ -24,7 +24,7 @@ const userSlice = createSlice({
         },
         setHasNewMessage:(state, action)=>{ 
             state.hasNewMessage = action.payload;
-        }
+        },
     }
 });
 export const {setAuthUser,setOtherUsers,setSelectedUser,setOnlineUsers, setHasNewMessage} = userSlice.actions;
