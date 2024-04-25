@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import SendInput from './SendInput';
 import Messages from './Messages';
 import { useSelector, useDispatch } from "react-redux";
-import OtherUsers from "./OtherUsers"
+import OtherUsers from './OtherUsers';
 import './styles.css'
 
 const MessageContainer = () => {
@@ -39,7 +39,7 @@ const MessageContainer = () => {
                         <h1 className='text-3xl text-white font-bold relative pt-44'>Hi, {authUser?.fullName}. Let's start conversation</h1>
                         <h1 className='text-2xl text-white relative p-10'></h1>
                         <p className='text-xl text-white relative pb-10'>HERE ARE SOME PEOPLES YOU MAY KNOW</p>
-                        <OtherUsers className='relative'/>
+                        <OtherUsers/>
                     </div>
                 )
             }
