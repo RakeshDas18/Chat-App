@@ -10,6 +10,8 @@ import { persistStore } from 'redux-persist';
 
 let persistor = persistStore(store);
 
+export const BASE_URL = "https://chat-app-fr2p.onrender.com";
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
