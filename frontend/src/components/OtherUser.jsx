@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch,useSelector } from "react-redux";
-import { setSelectedUser } from '../redux/userSlice.js';
+import { setSelectedUser } from '../redux/userSlice';
 
 const OtherUser = ({ user }) => {
     const dispatch = useDispatch();
