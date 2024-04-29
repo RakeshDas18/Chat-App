@@ -15,7 +15,7 @@ const MessageContainer = () => {
     return (
         <div className='flex flex-col flex-1 min-h-0 w-screen'>
             {
-                selectedUser !== null ? (
+                selectedUser != null ? (
                     <div className='flex flex-col flex-1'>
                         <div className='flex gap-2 items-center bg-zinc-800 text-white px-4 py-2 mb-2'>
                             <div className={`avatar ${isOnline ? 'online' : ''}`}>
@@ -34,7 +34,7 @@ const MessageContainer = () => {
                         </div>
                         <SendInput />
                     </div>
-                ) : (
+                ):(
                     <div className='flex flex-col flex-1 justify-center items-center text-center'>
                         <h1 className='text-3xl text-white font-bold relative pt-44'>Hi, {authUser?.fullName}. Let's start conversation</h1>
                         <h1 className='text-2xl text-white relative p-10'></h1>
