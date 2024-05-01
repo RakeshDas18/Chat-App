@@ -1,5 +1,5 @@
 import React from 'react'
-import { useDispatch,useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { setSelectedUser } from '../redux/userSlice';
 
 const OtherUser = ({ user }) => {
@@ -11,7 +11,7 @@ const OtherUser = ({ user }) => {
     }
     return (
         <>
-            <div onClick={() => selectedUserHandler(user)} className={` ${selectedUser?._id === user?._id ? 'bg-zinc-200 text-black' : 'text-white'} flex gap-2 hover:text-black items-center hover:bg-zinc-200 rounded p-2 cursor-pointer`}>
+            <div onClick={() => selectedUserHandler(user)} className={` ${selectedUser?._id === user._id ? 'bg-zinc-200 text-black' : 'text-white'} flex gap-2 hover:text-black items-center hover:bg-zinc-200 rounded p-2 cursor-pointer`}>
                 <div className={`avatar ${isOnline ? 'online' : '' }`}>
                     <div className='w-12 rounded-full'>
                         <img src={user?.profilePhoto} alt="user-profile" />
