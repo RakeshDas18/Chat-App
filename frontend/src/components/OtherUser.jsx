@@ -6,7 +6,8 @@ import { setSelectedUser } from '../redux/userSlice.js';
 
 
 
-const OtherUser = ({ user }) => {
+const OtherUser = ( props ) => {
+    const user = props.user;
 
     const dispatch = useDispatch();
 
