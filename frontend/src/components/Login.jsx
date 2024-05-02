@@ -18,17 +18,22 @@ const Login = () => {
     e.preventDefault();
     try {
       const res = await axios.post(`${BASE_URL}/api/v1/user/login`, user, {
-        headers:{
+        headers: {
           'Content-Type': 'application/json'
         },
-        withCredentials:true
+        withCredentials: true
       });
-      navigate("/")
-      dispatch(setAuthUser(res.data))
+      navigate("/");
+      console.log(res);
+      dispatch(setAuthUser(res.data));
     } catch (error) {
+      toast.error(error.response.data.message);
       console.log(error);
-      
     }
+    setUser({
+      username: "",
+      password: ""
+    })
   }
   return (
     <div className="min-w-96 mx-auto">
@@ -55,10 +60,9 @@ const Login = () => {
               value={user.password}
               onChange={(e) => setUser({ ...user, password: e.target.value })}
               className='w-full input input-bordered h-10'
-              type="password"
-              placeholder='Password' />
+              type="password" />
           </div>
-          <p className='text-center my-2'>Don't have an account? <Link to="/signup"> Signup </Link></p>
+          <p className='text-center my-2'>Don't have an account? <Link to="/signup"> signup </Link></p>
           <div>
             <button type="submit" className='btn btn-block btn-sm mt-2 border border-slate-700'>Login</button>
           </div>
