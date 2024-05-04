@@ -31,7 +31,6 @@ const Login = () => {
       console.log(error);
     }
     setUser({
-      username: "",
       password: ""
     })
   }
@@ -63,7 +62,7 @@ const Login = () => {
               type="password"
               placeholder='Password' />
           </div>
-          <p className='text-center my-2'>Don't have an account? <Link to="/signup"> signup </Link></p>
+          <p className='text-center my-2'>Don't have an account? <Link to="/signup"> Signup </Link></p>
           <div>
             <button type="submit" className='btn btn-block btn-sm mt-2 border border-slate-700'>Login</button>
           </div>
