@@ -2,8 +2,7 @@ import React from 'react'
 import { useDispatch, useSelector } from "react-redux";
 import { setSelectedUser } from '../redux/userSlice';
 
-const OtherUser = ( {props} ) => {
-    const user = props.user;
+const OtherUser = ( {user} ) => {
     const dispatch = useDispatch();
     const { selectedUser, onlineUsers } = useSelector(store => store.user);
     const isOnline = onlineUsers?.includes(user?._id); // Guard against user being undefined
