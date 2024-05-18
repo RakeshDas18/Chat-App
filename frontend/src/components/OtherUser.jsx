@@ -5,15 +5,13 @@ import { setSelectedUser } from '../redux/userSlice';
 const OtherUser = ( {user} ) => {
     const dispatch = useDispatch();
     const { selectedUser, onlineUsers } = useSelector(store => store.user);
-    const isOnline = onlineUsers?.includes(user?._id); // Guard against user being undefined
+    const isOnline = onlineUsers?.includes(user?._id); 
     const selectedUserHandler = (user) => {
         dispatch(setSelectedUser(user));
     }
 
     if (!user) {
-        return null; // If user is undefined, return null or a loading indicator
-    }
-
+        return null;
     return (
         <>
             <div onClick={() => selectedUserHandler(user)} className={` ${selectedUser?._id === user?._id ? 'bg-zinc-200 text-black' : 'text-white'} flex gap-2 hover:text-black items-center hover:bg-zinc-200 rounded p-2 cursor-pointer`}>
