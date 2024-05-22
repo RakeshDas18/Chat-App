@@ -5,10 +5,11 @@ import {useSelector} from "react-redux";
 
 
 const OtherUsers = () => {
-    // my custom hook
     useGetOtherUsers();
-    const {otherUsers} = useSelector(store=>store.user);
-    if (!otherUsers) return null; // early return in react
+    const {otherUsers} = useSelector(store => store.user);
+    if (!otherUsers){
+        return null;
+    }
      
     return (
         <div className='overflow-auto flex-1'>
