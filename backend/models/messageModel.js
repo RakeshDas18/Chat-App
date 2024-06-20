@@ -17,7 +17,7 @@ const messageModel = new mongoose.Schema({
     },
     time: {
         type: Date,
-        default: Date.now // Set the default value to the current timestamp
+        default: Date.now
     }
 },{timestamps:true});
 export const Message = mongoose.model("Message", messageModel);
