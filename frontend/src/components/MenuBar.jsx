@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Sidebar from './Sidebar'
 import Search from './Search'
-import './styles.css'
+import './styles.css';
 import HomePage from './HomePage';
 import { Link } from 'react-router-dom';
 
