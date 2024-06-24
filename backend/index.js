@@ -1,5 +1,4 @@
-// const express = require('express')// method-1
-import express from "express"; // method-2
+import express from "express";
 import dotenv from "dotenv"; 
 import connectDB from "./config/database.js";
 import userRoute from "./routes/userRoute.js";
