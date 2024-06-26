@@ -3,10 +3,10 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #3B82F6; /* Adjust as needed */
+    background-color: #3B82F6; 
     color: #3B82F6;
-    z-index: 9999; /* Ensure it's on top of other content */
-    transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+    z-index: 9999; 
+    transition: transform 0.3s ease-in-out; 
   }
   
   .menu-content {
