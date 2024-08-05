@@ -14,7 +14,7 @@ export const register = async (req, res) => {
 
         const user = await User.findOne({ username });
         if (user) {
-            return res.status(400).json({ message: "Username already exist. Try different username!!!" });
+            return res.status(400).json({ message: "Username already exist. Try different username!!!"});
         }
         const hashedPassword = await bcrypt.hash(password, 10);
 
@@ -77,7 +77,7 @@ export const login = async (req, res) => {
 export const logout = (req, res) => {
     try {
         return res.status(200).cookie("token", "", { maxAge: 0 }).json({
-            message: "logged out successfully."
+            message: "Logged out successfully."
         })
     } catch (error) {
         console.log(error);
