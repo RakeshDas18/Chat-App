@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 
 
 const Message = ({ message }) => {
-    const result = message?.createdAt
+    const result = message?.createdAt;
     const result2 = result.slice(11, 16);
 
     let hours = result2.slice(0, 2);
