@@ -20,14 +20,14 @@ const userSocketMap = {};
 
 
 io.on('connection', (socket)=>{
-    const userId = socket.handshake.query.userId
-    if(userId !== undefined){
+    const userId = socket.handshake.query.userId;
+    if(userId !== undefined) {
         userSocketMap[userId] = socket.id;
     } 
 
     io.emit('getOnlineUsers',Object.keys(userSocketMap));
 
-    socket.on('disconnect', ()=>{
+    socket.on('disconnect', () => {
         delete userSocketMap[userId];
         io.emit('getOnlineUsers',Object.keys(userSocketMap));
     })
