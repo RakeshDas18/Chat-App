@@ -15,7 +15,7 @@ const MenuBar = () => {
   return (
     <nav className={`menu-bar flex flex-row items-center justify-between flex-wrap bg-blue-500 p-6 w-screen`} style={{zIndex: 9999}}>
       <div className="flex items-center flex-shrink-0 text-white mr-6">
-        <span className="font-semibold text-xl tracking-tight cursor-pointer">Chat</span>
+        <span className="font-semibold text-xl tracking-tight cursor-pointer">Chats</span>
       </div>
       <div className="block">
         <button
