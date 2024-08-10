@@ -19,7 +19,7 @@ export const getReceiverSocketId = (receiverId) => {
 const userSocketMap = {};
 
 
-io.on('connection', (socket)=>{
+io.on('connection', (socket) => {
     const userId = socket.handshake.query.userId;
     if(userId !== undefined) {
         userSocketMap[userId] = socket.id;
@@ -34,4 +34,4 @@ io.on('connection', (socket)=>{
 
 })
 
-export {app, io, server};
+export {app, io, server}
