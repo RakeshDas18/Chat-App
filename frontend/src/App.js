@@ -51,13 +51,12 @@ function App() {
       }
     }
 
-  },[authUser]);
+  }, [authUser])
 
   return (
     <div className="p-4 h-screen flex items-center justify-center">
-      <RouterProvider router={router}/>
+      <RouterProvider router = { router }/>
     </div>
-
   );
 }
 
