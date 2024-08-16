@@ -78,7 +78,7 @@ const Signup = () => {
               onChange={(e) => setUser({ ...user, password: e.target.value })}
               className='w-full input input-bordered h-10'
               type="password"
-              placeholder='' />
+              placeholder='Password' />
           </div>
           <div>
             <label className='label p-2'>
@@ -89,7 +89,7 @@ const Signup = () => {
               onChange={(e) => setUser({ ...user, confirmPassword: e.target.value })}
               className='w-full input input-bordered h-10'
               type="password"
-              placeholder='' />
+              placeholder='Confirm Password' />
           </div>
           <div className='flex items-center my-4'>
             <div className='flex items-center'>
