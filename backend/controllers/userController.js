@@ -18,7 +18,7 @@ export const register = async (req, res) => {
         }
         const hashedPassword = await bcrypt.hash(password, 10);
 
-        // profilePhoto
+        // Profile Photo
         const maleProfilePhoto = `https://avatar.iran.liara.run/public/boy?username=${username}`;
         const femaleProfilePhoto = `https://avatar.iran.liara.run/public/girl?username=${username}`;
 
