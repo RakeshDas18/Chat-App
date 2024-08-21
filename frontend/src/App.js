@@ -31,7 +31,7 @@ function App() {
   const {socket} = useSelector(store=>store.socket);
   const dispatch = useDispatch();
 
-  useEffect(()=>{
+  useEffect(() => {
     if(authUser){
       const socketio = io(`${BASE_URL}`, {
           query:{
@@ -44,7 +44,7 @@ function App() {
         dispatch(setOnlineUsers(onlineUsers))
       });
       return () => socketio.close();
-    }else{
+    } else {
       if(socket){
         socket.close();
         dispatch(setSocket(null));
@@ -60,4 +60,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
