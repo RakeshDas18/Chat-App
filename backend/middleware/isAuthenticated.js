@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-const isAuthenticated = async(req,res,next) => {
+const isAuthenticated = async(req, res, next) => {
   try {
     const token = req.cookies.token;
     if(!token){
@@ -7,7 +7,7 @@ const isAuthenticated = async(req,res,next) => {
     };
     const decode = await jwt.verify(token,process.env.JWT_SECERET_KEY);
     if(!decode){
-        return res.status(401).json({message:"Invalid token"});
+        return res.status(401).json({message:"Invalid token"})
     };
     req.id = decode.userId;
     next();
