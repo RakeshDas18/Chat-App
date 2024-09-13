@@ -18,9 +18,9 @@ const useGetOtherUsers = () => {
                 console.log(error);
             }
         }
-        fetchOtherUsers();
+        fetchOtherUsers()
     }, [])
 
 }
 
-export default useGetOtherUsers
+export default useGetOtherUsers;
