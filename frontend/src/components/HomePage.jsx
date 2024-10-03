@@ -11,12 +11,12 @@ const HomePage = () => {
   const navigate = useNavigate();
   useEffect(() => {
     if (!authUser) {
-      navigate("/login")
+      navigate("/login");
     }
   }, []);
   return (
-    <div className="flex flex-col h-screen w-full">
-      <MenuBar/>
+    <div className = "flex flex-col h-screen w-full">
+      <MenuBar />
       <MessageContainer />
       <OtherUsers />
       <OtherUser />
