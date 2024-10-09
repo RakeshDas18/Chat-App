@@ -40,13 +40,13 @@ function App() {
       });
       dispatch(setSocket(socketio));
 
-      socketio?.on('getOnlineUsers', (onlineUsers)=>{
+      socketio?.on('getOnlineUsers', ( onlineUsers ) => {
         dispatch(setOnlineUsers(onlineUsers))
       });
       return () => socketio.close();
     } else {
       if(socket){
-        socket.close();
+        socket.close()
         dispatch(setSocket(null));
       }
     }
@@ -60,4 +60,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
