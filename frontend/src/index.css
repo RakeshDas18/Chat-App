@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 body {
   background-size: cover;
   background-position: center;
@@ -20,17 +21,14 @@ code {
 
 
 ::-webkit-scrollbar {
-  /* Customize the scrollbar width */
   width:1px;
 }
 
 ::-webkit-scrollbar-track {
-  /* Customize the scrollbar track */
   background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  /* Customize the scrollbar thumb */
   background: transparent;
   border-radius: 10px;
 }
