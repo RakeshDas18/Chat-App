@@ -11,7 +11,7 @@ const HomePage = () => {
   const navigate = useNavigate();
   useEffect(() => {
     if (!authUser) {
-      navigate("/login");
+      navigate("/login")
     }
   }, []);
   return (
@@ -21,7 +21,7 @@ const HomePage = () => {
       <OtherUsers />
       <OtherUser />
     </div>
-  );
+  )
 }
 
 export default HomePage;
