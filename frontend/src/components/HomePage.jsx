@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
 import MessageContainer from './MessageContainer';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
@@ -24,4 +24,4 @@ const HomePage = () => {
   )
 }
 
-export default HomePage
+export default HomePage;
