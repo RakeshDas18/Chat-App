@@ -11,7 +11,7 @@ const HomePage = () => {
   const navigate = useNavigate();
   useEffect(() => {
     if (!authUser) {
-      navigate("/login")
+      navigate("/login");
     }
   }, []);
   return (
