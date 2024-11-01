@@ -14,8 +14,9 @@ const isAuthenticated = async (req, res, next) => {
   } catch (error) {
     console.log(error);
   }
-};
-export default isAuthenticated;
+}
+
+export default isAuthenticated
 
 // const req = {
 //     id:"",
