@@ -5,11 +5,11 @@ const socketSlice = createSlice({
         socket:null
     },
     reducers:{
-        setSocket:(state, action)=>{
+        setSocket:(state, action) => {
             state.socket = action.payload;
         }
     }
 });
 
 export const { setSocket } = socketSlice.actions;
-export default socketSlice.reducer
+export default socketSlice.reducer;
