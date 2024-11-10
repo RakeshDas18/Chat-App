@@ -19,7 +19,7 @@ const useGetOtherUsers = () => {
             }
         }
         fetchOtherUsers();
-    }, []);
+    }, [])
 
 }
 
