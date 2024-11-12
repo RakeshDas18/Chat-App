@@ -24,10 +24,10 @@ const Message = ({ message }) => {
 
     useEffect(() => {
         scroll.current?.scrollIntoView({ behavior: "auto" });
-    }, [message]);
+    }, [message])
 
     return (
-        <div ref={scroll} className={`chat ${message?.senderId === authUser?._id ? 'chat-end' : 'chat-start'} w-screen pr-5 pl-5`}>
+        <div ref={scroll} className={`chat ${message?.senderId == authUser?._id ? 'chat-end' : 'chat-start'} w-screen pr-5 pl-5`}>
             <div className="chat-image avatar">
                 <div className="w-10 rounded-full">
                     <img alt="Tailwind CSS chat bubble component" src={message?.senderId === authUser?._id ? authUser?.profilePhoto : selectedUser?.profilePhoto} />
