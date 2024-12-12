@@ -28,10 +28,9 @@ io.on('connection', (socket) => {
     io.emit('getOnlineUsers', Object.keys(userSocketMap));
 
     socket.on('disconnect', () => {
-        delete userSocketMap[userId];
+        delete userSocketMap[userId]
         io.emit('getOnlineUsers',Object.keys(userSocketMap));
     })
-
 })
 
 export {app, io, server};
