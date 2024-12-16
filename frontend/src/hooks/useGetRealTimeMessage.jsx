@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import {useSelector, useDispatch} from "react-redux";
+import {useSelector, useDispatch} from "react-redux"
 import { setMessages } from "../redux/messageSlice";
 
 const useGetRealTimeMessage = () => {
@@ -13,4 +13,4 @@ const useGetRealTimeMessage = () => {
         return () => socket?.off("newMessage");
     },[setMessages, messages]);
 };
-export default useGetRealTimeMessage;
+export default useGetRealTimeMessage
