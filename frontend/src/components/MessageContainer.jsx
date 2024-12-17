@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from 'react'
 import SendInput from './SendInput';
 import Messages from './Messages';
 import { useSelector, useDispatch } from "react-redux";
@@ -44,4 +44,4 @@ const MessageContainer = () => {
     );
 }
 
-export default MessageContainer;
+export default MessageContainer
