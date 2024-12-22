@@ -44,4 +44,4 @@ const MessageContainer = () => {
     );
 }
 
-export default MessageContainer
+export default MessageContainer;
